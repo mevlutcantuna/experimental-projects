@@ -39,6 +39,7 @@ module.exports = {
     ],
     "@typescript-eslint/no-unsafe-return": "warn",
     "no-unused-vars": "warn", // Change this to "warn"
-    "@typescript-eslint/no-unused-vars": "warn" // Change this to "warn"
+    "@typescript-eslint/no-unused-vars": "warn", // Change this to "warn",
+    "@typescript-eslint/no-explicit-any": "off"
   }
 };
