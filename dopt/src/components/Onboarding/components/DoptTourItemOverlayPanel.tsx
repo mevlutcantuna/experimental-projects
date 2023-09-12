@@ -1,3 +1,5 @@
+import { useTourItem } from "@dopt/react-tour";
+
 interface DoptTourItemOverlayPanelProps {
   blockId: string;
 }
@@ -5,7 +7,9 @@ interface DoptTourItemOverlayPanelProps {
 const DoptTourItemOverlayPanel = ({
   blockId
 }: DoptTourItemOverlayPanelProps) => {
-  return <div>{blockId}</div>;
+  const tourItem = useTourItem(blockId);
+  console.log(tourItem.active);
+  return <div>{tourItem.active}</div>;
 };
 
 export default DoptTourItemOverlayPanel;

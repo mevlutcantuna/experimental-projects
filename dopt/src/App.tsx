@@ -12,7 +12,7 @@ function App() {
       }}
       userId={email}
     >
-      <div className="flex p-8 w-full bg-gray-300 h-full min-h-screen">
+      <div className="flex p-8 w-full bg-gray-300 h-full min-h-screen relative">
         <div className="max-w-[1194px] flex w-full gap-12 mx-auto">
           <Sidebar />
           <Applications />

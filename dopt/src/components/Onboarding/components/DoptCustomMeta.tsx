@@ -15,7 +15,7 @@ const DoptCustomMeta = ({ blockId }: DoptCustomMetaProps) => {
     if (
       location.pathname === block.field("start-expression") &&
       block.state.active &&
-      started
+      !started.current
     ) {
       block.transition("complete");
       started.current = true;
